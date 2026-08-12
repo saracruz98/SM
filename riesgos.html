@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riesgos y Peligros Laborales</title>
+    <meta name="description"
+        content="Guía visual de los riesgos y peligros laborales: biológico, químico, psicosocial, físico, biomecánico, natural y condiciones de seguridad.">
+    <title>Riesgos y Peligros Laborales | SST</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -15,254 +17,519 @@
 <body>
 
     <header>
-
         <div class="logo">
             <h2>SST</h2>
         </div>
-
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                
+                <li><a href="riesgos.html" class="activo">Riesgos</a></li>
+                <li><a href="riesgos.html#galeria">Galería</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <section class="titulo-pagina">
-
-        <h1>Riesgos y Peligros Laborales</h1>
-
+    <!-- ===================== GALERÍA ===================== -->
+    <section id="galeria" class="titulo-pagina" style="margin-top: 4rem;">
+        <h2>Galería de Evidencias</h2>
         <p>
-            Conoce los principales riesgos presentes en los ambientes laborales y las posibles afectaciones para la
-            salud.
+            Registro fotográfico real, tomado durante un recorrido de inspección en las instalaciones,
+            que muestra ejemplos concretos de riesgos laborales y de las medidas de señalización y control
+            que ya existen en el lugar.
         </p>
+    </section>
 
+    <p class="galeria-intro"
+        style="text-align: center; max-width: 800px; margin: 0 auto 2rem; padding: 0 1rem; color: #666;">
+        Usa los filtros para ver únicamente las fotografías de una categoría de riesgo, o haz clic sobre
+        cualquier imagen para ampliarla y leer su descripción completa.
+    </p>
+
+    <!-- ===================== FILTROS ===================== -->
+    <div class="filtros">
+        <button class="filtro-btn activo" data-filtro="todos">Todos</button>
+        <button class="filtro-btn" data-filtro="quimico">Químico</button>
+        <button class="filtro-btn" data-filtro="electrico">Eléctrico</button>
+        <button class="filtro-btn" data-filtro="mecanico">Mecánico</button>
+        <button class="filtro-btn" data-filtro="fisico">Físico</button>
+        <button class="filtro-btn" data-filtro="biologico">Biológico</button>
+        <button class="filtro-btn" data-filtro="locativo">Locativo</button>
+        <button class="filtro-btn" data-filtro="natural">Natural</button>
+        <button class="filtro-btn" data-filtro="transito">Tránsito</button>
+        <button class="filtro-btn" data-filtro="institucional">Institucional</button>
+    </div>
+
+    <!-- ===================== GALERÍA ===================== -->
+    <div class="imagenes">
+
+        <figure data-categoria="quimico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/quimico-01-armarios.jpg" alt="Armarios de sustancias químicas"
+                    loading="lazy" data-lightbox
+                    data-caption="Armarios de almacenamiento para sustancias químicas, debidamente señalizados con pictogramas de peligro.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Riesgo Químico</span>
+                <p>Armarios de almacenamiento señalizados con pictogramas de peligro.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="electrico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/electrico-01-tablero.jpg" alt="Tablero eléctrico con señal de alto voltaje"
+                    loading="lazy" data-lightbox
+                    data-caption="Tablero eléctrico señalizado con aviso de alto voltaje, junto a un extintor de incendios.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condición de Seguridad · Eléctrico</span>
+                <p>Tablero eléctrico con señal de alto voltaje y extintor cercano.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="natural">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/natural-01-ladera.jpg" alt="Ladera con vegetación y terreno inestable"
+                    loading="lazy" data-lightbox
+                    data-caption="Ladera con vegetación y terreno irregular, con posible riesgo de deslizamiento.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Riesgo Natural</span>
+                <p>Ladera con terreno irregular y posible riesgo de deslizamiento.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="transito">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/transito-01-vehiculo.jpg"
+                    alt="Vehículo institucional en zona de circulación" loading="lazy" data-lightbox
+                    data-caption="Vehículo institucional maniobrando en una zona de circulación compartida con peatones.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condición de Seguridad · Tránsito</span>
+                <p>Vehículo institucional en zona de circulación compartida con peatones.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="biologico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/biologico-01-desinfeccion.jpg" alt="Desinfección de superficies"
+                    loading="lazy" data-lightbox
+                    data-caption="Labor de desinfección de una superficie de trabajo como medida de control del riesgo biológico.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Riesgo Biológico</span>
+                <p>Desinfección de superficies como medida de control del riesgo biológico.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="electrico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/electrico-02-redes.jpg" alt="Redes eléctricas de alta tensión"
+                    loading="lazy" data-lightbox
+                    data-caption="Redes eléctricas de alta tensión ubicadas cerca de zonas con vegetación.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condición de Seguridad · Eléctrico</span>
+                <p>Redes eléctricas de alta tensión próximas a zonas con vegetación.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="locativo">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/locativo-01-escombros.jpg" alt="Escombros acumulados" loading="lazy"
+                    data-lightbox
+                    data-caption="Escombros y materiales de construcción acumulados, un riesgo locativo por tropiezos o caídas.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condición de Seguridad · Locativo</span>
+                <p>Escombros acumulados que representan riesgo de tropiezos o caídas.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="locativo">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/condiciones-01-lavamanos.jpg" alt="Punto de lavado e higiene"
+                    loading="lazy" data-lightbox
+                    data-caption="Punto de lavado e higiene disponible para el personal, medida básica de prevención.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condiciones de Higiene</span>
+                <p>Punto de lavado e higiene disponible para el personal.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="locativo">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/locativo-02-escombros.jpg"
+                    alt="Residuos de construcción cerca de zona peatonal" loading="lazy" data-lightbox
+                    data-caption="Residuos de construcción ubicados cerca de una zona de tránsito peatonal.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condición de Seguridad · Locativo</span>
+                <p>Residuos de construcción cerca de una zona de tránsito peatonal.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="quimico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/quimico-02-inflamable.jpg" alt="Señalización de material inflamable"
+                    loading="lazy" data-lightbox
+                    data-caption="Señalización de material inflamable junto a una instalación de gas.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Riesgo Químico</span>
+                <p>Señalización de material inflamable en instalación de gas.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="locativo">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/locativo-03-vidrio.jpg" alt="Vidrio fisurado señalizado" loading="lazy"
+                    data-lightbox
+                    data-caption="Vidrio fisurado señalizado con cinta de precaución para evitar golpes o cortes.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condición de Seguridad · Locativo</span>
+                <p>Vidrio fisurado señalizado para evitar golpes o cortes.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="institucional">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/institucional-01-fachada.jpg" alt="Fachada de las instalaciones"
+                    loading="lazy" data-lightbox
+                    data-caption="Fachada de las instalaciones donde se realizó el recorrido de inspección.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Institucional</span>
+                <p>Fachada de las instalaciones donde se realizó la inspección.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="quimico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/quimico-03-laboratorio.jpg"
+                    alt="Manipulación de sustancias químicas en laboratorio" loading="lazy" data-lightbox
+                    data-caption="Manipulación de una sustancia química en laboratorio, usando guantes y elementos de protección personal.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Riesgo Químico</span>
+                <p>Manipulación de sustancias con elementos de protección personal.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="biologico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/biologico-02-desinfeccion.jpg" alt="Rutina de limpieza y desinfección"
+                    loading="lazy" data-lightbox
+                    data-caption="Rutina de limpieza y desinfección de superficies en un área común.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Riesgo Biológico</span>
+                <p>Rutina de limpieza y desinfección en áreas comunes.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="fisico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/fisico-01-altas-temperaturas.jpg"
+                    alt="Laboratorio zona de altas temperaturas" loading="lazy" data-lightbox
+                    data-caption="Laboratorio señalizado como zona de tránsito con equipos de altas temperaturas.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Riesgo Físico</span>
+                <p>Laboratorio señalizado como zona con equipos de altas temperaturas.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="fisico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/fisico-02-altas-temperaturas.jpg" alt="Aviso de precaución en laboratorio"
+                    loading="lazy" data-lightbox
+                    data-caption="Aviso de precaución en el acceso a un laboratorio con equipos de altas temperaturas.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Riesgo Físico</span>
+                <p>Aviso de precaución en el acceso a la zona de altas temperaturas.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="fisico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/fisico-03-altas-temperaturas.jpg"
+                    alt="Zona restringida por altas temperaturas" loading="lazy" data-lightbox
+                    data-caption="Vista general de la zona restringida por manejo de equipos de altas temperaturas.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Riesgo Físico</span>
+                <p>Vista general de la zona restringida por altas temperaturas.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="mecanico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/mecanico-01-atrapamiento.jpg" alt="Advertencia de riesgo de atrapamiento"
+                    loading="lazy" data-lightbox
+                    data-caption="Aviso de advertencia por riesgo de atrapamiento en piezas móviles, junto a la señal de salida de emergencia.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condición de Seguridad · Mecánico</span>
+                <p>Advertencia de riesgo de atrapamiento por piezas móviles.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="electrico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/electrico-03-tablero.jpg" alt="Caja eléctrica señalizada" loading="lazy"
+                    data-lightbox
+                    data-caption="Caja eléctrica señalizada con advertencia de alto voltaje, junto a un aviso de espacio libre de humo.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condición de Seguridad · Eléctrico</span>
+                <p>Caja eléctrica señalizada con advertencia de alto voltaje.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="locativo">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/locativo-04-pasillo.jpg" alt="Pasillo de circulación interna"
+                    loading="lazy" data-lightbox
+                    data-caption="Pasillo de circulación interna dentro de las instalaciones.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condición de Seguridad · Locativo</span>
+                <p>Pasillo de circulación interna dentro de las instalaciones.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="electrico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/electrico-05-caja.jpg" alt="Caja de conexiones eléctricas exterior"
+                    loading="lazy" data-lightbox
+                    data-caption="Caja de conexiones eléctricas ubicada en una zona exterior, expuesta a la intemperie.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Condición de Seguridad · Eléctrico</span>
+                <p>Caja de conexiones eléctricas en zona exterior, expuesta a la intemperie.</p>
+            </figcaption>
+        </figure>
+
+        <figure data-categoria="biologico">
+            <div class="foto-wrap">
+                <img src="assets/img/galeria/biologico-03-microorganismos.jpg" alt="Registro de microorganismos"
+                    loading="lazy" data-lightbox
+                    data-caption="Registro fotográfico de estructuras filamentosas, relacionado con el estudio del riesgo biológico.">
+                <div class="lupa">🔍</div>
+            </div>
+            <figcaption>
+                <span class="etiqueta">Riesgo Biológico</span>
+                <p>Registro fotográfico relacionado con el estudio del riesgo biológico.</p>
+            </figcaption>
+        </figure>
+
+    </div>
+
+    <section class="titulo-pagina">
+        <h1>Riesgos y Peligros Laborales</h1>
+        <p>
+            Conoce los principales riesgos presentes en los ambientes laborales, sus causas y las posibles
+            afectaciones para la salud. Haz clic en cualquier imagen para verla en tamaño completo.
+        </p>
     </section>
 
     <main class="contenedor-riesgos">
 
         <!-- Riesgo Biológico -->
-        <div class="card">
-
-            <img src="WhatsApp Image 2026-07-30 at 7.36.15 AM.jpeg" alt="Riesgo Biológico">
-
+        <div class="card" id="biologico">
+            <div class="imagen-wrap">
+                <img src="assets/img/riesgos/riesgo-biologico.jpg" alt="Riesgo Biológico" loading="lazy" data-lightbox
+                    data-caption="Riesgo Biológico: exposición a microorganismos.">
+                <div class="lupa">🔍 Ver imagen completa</div>
+            </div>
             <div class="contenido">
-
                 <h2>Riesgo Biológico</h2>
-
-                <p>
-                    Se origina por la exposición a microorganismos como virus, bacterias, hongos y parásitos.
-                </p>
-
+                <p>Se origina por la exposición a microorganismos como virus, bacterias, hongos y parásitos.</p>
                 <h3>Ejemplos</h3>
-
                 <ul>
                     <li>Virus</li>
                     <li>Bacterias</li>
                     <li>Hongos</li>
                     <li>Parásitos</li>
                 </ul>
-
                 <h3>Afectaciones</h3>
-
                 <ul>
                     <li>Infecciones</li>
                     <li>Enfermedades respiratorias</li>
                     <li>Contagios</li>
                 </ul>
-
             </div>
-
         </div>
 
         <!-- Riesgo Químico -->
-        <div class="card">
-
-            <img src="WhatsApp Image 2026-07-30 at 7.36.16 AM.jpeg" alt="Riesgo Químico">
-
+        <div class="card" id="quimico">
+            <div class="imagen-wrap">
+                <img src="assets/img/riesgos/riesgo-quimico.jpg" alt="Riesgo Químico" loading="lazy" data-lightbox
+                    data-caption="Riesgo Químico: manipulación o exposición a sustancias químicas.">
+                <div class="lupa">🔍 Ver imagen completa</div>
+            </div>
             <div class="contenido">
-
                 <h2>Riesgo Químico</h2>
-
-                <p>
-                    Se produce por la manipulación o exposición a sustancias químicas.
-                </p>
-
+                <p>Se produce por la manipulación o exposición a sustancias químicas.</p>
                 <h3>Ejemplos</h3>
-
                 <ul>
                     <li>Polvos</li>
                     <li>Gases</li>
                     <li>Vapores</li>
                     <li>Líquidos</li>
                 </ul>
-
                 <h3>Afectaciones</h3>
-
                 <ul>
                     <li>Quemaduras</li>
                     <li>Irritación</li>
                     <li>Intoxicaciones</li>
                     <li>Problemas respiratorios</li>
                 </ul>
-
             </div>
-
         </div>
 
         <!-- Riesgo Psicosocial -->
-        <div class="card">
-
-            <img src="WhatsApp Image 2026-07-30 at 7.36.17 AM.jpeg" alt="Riesgo Psicosocial">
-
+        <div class="card" id="psicosocial">
+            <div class="imagen-wrap">
+                <img src="assets/img/riesgos/riesgo-psicosocial.jpg" alt="Riesgo Psicosocial" loading="lazy"
+                    data-lightbox data-caption="Riesgo Psicosocial: organización del trabajo y bienestar emocional.">
+                <div class="lupa">🔍 Ver imagen completa</div>
+            </div>
             <div class="contenido">
-
                 <h2>Riesgo Psicosocial</h2>
-
-                <p>
-                    Está relacionado con la organización del trabajo y afecta el bienestar emocional.
-                </p>
-
+                <p>Está relacionado con la organización del trabajo y afecta el bienestar emocional.</p>
                 <h3>Ejemplos</h3>
-
                 <ul>
                     <li>Estrés</li>
                     <li>Jornadas extensas</li>
                     <li>Presión laboral</li>
                     <li>Acoso laboral</li>
                 </ul>
-
                 <h3>Afectaciones</h3>
-
                 <ul>
                     <li>Ansiedad</li>
                     <li>Depresión</li>
                     <li>Fatiga</li>
                     <li>Agotamiento</li>
                 </ul>
-
             </div>
-
         </div>
 
         <!-- Riesgo Físico -->
-        <div class="card">
-
-            <img src="WhatsApp Image 2026-07-30 at 7.36.18 AM.jpeg" alt="Riesgo Físico">
-
+        <div class="card" id="fisico">
+            <div class="imagen-wrap">
+                <img src="assets/img/riesgos/riesgo-fisico.jpg" alt="Riesgo Físico" loading="lazy" data-lightbox
+                    data-caption="Riesgo Físico: factores físicos del ambiente laboral.">
+                <div class="lupa">🔍 Ver imagen completa</div>
+            </div>
             <div class="contenido">
-
                 <h2>Riesgo Físico</h2>
-
-                <p>
-                    Son factores físicos del ambiente laboral que pueden afectar la salud.
-                </p>
-
+                <p>Son factores físicos del ambiente laboral que pueden afectar la salud.</p>
                 <h3>Ejemplos</h3>
-
                 <ul>
                     <li>Ruido</li>
                     <li>Temperaturas extremas</li>
                     <li>Iluminación inadecuada</li>
                     <li>Radiaciones</li>
                 </ul>
-
                 <h3>Afectaciones</h3>
-
                 <ul>
                     <li>Pérdida auditiva</li>
                     <li>Quemaduras</li>
                     <li>Fatiga visual</li>
                     <li>Estrés térmico</li>
                 </ul>
-
             </div>
-
         </div>
 
         <!-- Riesgo Biomecánico -->
-        <div class="card">
-
-            <img src="WhatsApp Image 2026-07-30 at 7.36.20 AM.jpeg" alt="Riesgo Biomecánico">
-
+        <div class="card" id="biomecanico">
+            <div class="imagen-wrap">
+                <img src="assets/img/riesgos/riesgo-biomecanico.jpg" alt="Riesgo Biomecánico" loading="lazy"
+                    data-lightbox data-caption="Riesgo Biomecánico: movimientos repetitivos y malas posturas.">
+                <div class="lupa">🔍 Ver imagen completa</div>
+            </div>
             <div class="contenido">
-
                 <h2>Riesgo Biomecánico</h2>
-
-                <p>
-                    Se presenta por movimientos repetitivos, esfuerzos físicos o malas posturas.
-                </p>
-
+                <p>Se presenta por movimientos repetitivos, esfuerzos físicos o malas posturas.</p>
                 <h3>Ejemplos</h3>
-
                 <ul>
                     <li>Levantamiento de cargas</li>
                     <li>Movimientos repetitivos</li>
                     <li>Posturas forzadas</li>
                 </ul>
-
                 <h3>Afectaciones</h3>
-
                 <ul>
                     <li>Dolor lumbar</li>
                     <li>Tendinitis</li>
                     <li>Lesiones musculares</li>
                 </ul>
-
             </div>
-
         </div>
 
         <!-- Riesgo Natural -->
-        <div class="card">
-
-            <img src="WhatsApp Image 2026-07-30 at 7.36.21 AM.jpeg" alt="Riesgo Natural">
-
+        <div class="card" id="natural">
+            <div class="imagen-wrap">
+                <img src="assets/img/riesgos/riesgo-natural.jpg" alt="Riesgo Natural" loading="lazy" data-lightbox
+                    data-caption="Riesgo Natural: fenómenos naturales que generan emergencias.">
+                <div class="lupa">🔍 Ver imagen completa</div>
+            </div>
             <div class="contenido">
-
                 <h2>Riesgo Natural</h2>
-
-                <p>
-                    Son fenómenos naturales que pueden generar emergencias o accidentes.
-                </p>
-
+                <p>Son fenómenos naturales que pueden generar emergencias o accidentes.</p>
                 <h3>Ejemplos</h3>
-
                 <ul>
                     <li>Terremotos</li>
                     <li>Inundaciones</li>
                     <li>Tormentas</li>
                     <li>Deslizamientos</li>
                 </ul>
-
                 <h3>Afectaciones</h3>
-
                 <ul>
                     <li>Lesiones</li>
                     <li>Daños materiales</li>
                     <li>Emergencias</li>
                 </ul>
-
             </div>
-
         </div>
 
         <!-- Condiciones de Seguridad -->
-        <div class="card">
-
-            <img src="WhatsApp Image 2026-07-30 at 7.36.22 AM.jpeg" alt="Condiciones de Seguridad">
-
+        <div class="card" id="condiciones-seguridad">
+            <div class="imagen-wrap">
+                <img src="assets/img/riesgos/condiciones-seguridad.jpg" alt="Condiciones de Seguridad" loading="lazy"
+                    data-lightbox
+                    data-caption="Condiciones de Seguridad: condiciones inseguras en el lugar de trabajo.">
+                <div class="lupa">🔍 Ver imagen completa</div>
+            </div>
             <div class="contenido">
-
                 <h2>Condiciones de Seguridad</h2>
-
-                <p>
-                    Son condiciones inseguras presentes en el lugar de trabajo que pueden ocasionar accidentes.
-                </p>
-
+                <p>Son condiciones inseguras presentes en el lugar de trabajo que pueden ocasionar accidentes.</p>
                 <h3>Tipos</h3>
-
                 <ul>
                     <li>Riesgo eléctrico</li>
                     <li>Riesgo mecánico</li>
@@ -272,9 +539,7 @@
                     <li>Accidentes de tránsito</li>
                     <li>Riesgo público</li>
                 </ul>
-
                 <h3>Afectaciones</h3>
-
                 <ul>
                     <li>Caídas</li>
                     <li>Electrocución</li>
@@ -282,28 +547,38 @@
                     <li>Cortes</li>
                     <li>Accidentes graves</li>
                 </ul>
-
             </div>
-
         </div>
 
     </main>
 
-    <section class="volver">
 
-        <a href="index.html" class="btn">← Volver al Inicio</a>
-
-    </section>
+    <div class="volver">
+        <a href="#galeria" class="btn btn-secundario">Subir a Galería</a>
+        <a href="index.html" class="btn">Volver al inicio</a>
+    </div>
 
     <footer>
-
         <h3>Seguridad y Salud en el Trabajo</h3>
-
         <p>Conocer los riesgos es el primer paso para prevenir accidentes laborales.</p>
-
+        <div class="footer-links">
+            <a href="index.html">Inicio</a>
+            <a href="riesgos.html">Riesgos</a>
+            <a href="riesgos.html#galeria">Galería</a>
+        </div>
         <p>© 2026 - Proyecto Educativo SST</p>
-
     </footer>
+
+    <!-- ===================== LIGHTBOX (visor de imagen ampliada) ===================== -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-cerrar" aria-label="Cerrar">&times;</button>
+        <div class="lightbox-contenido">
+            <img src="" alt="">
+            <p class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 

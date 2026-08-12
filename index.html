@@ -1,20 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seguridad y Salud en el Trabajo</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Sitio educativo sobre Seguridad y Salud en el Trabajo (SST): qué es, por qué importa y cuáles son los principales riesgos laborales.">
+  <title>Seguridad y Salud en el Trabajo | Inicio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<section class="hero">
-  <div class="hero-texto">
-    <h1>Seguridad y Salud en el Trabajo</h1>
-    <p>La Seguridad y Salud en el Trabajo (SST) tiene como objetivo prevenir accidentes laborales y enfermedades ocupacionales, promoviendo ambientes de trabajo seguros y saludables para todas las personas.</p>
-    <a href="riesgos.html" class="btn">Conocer los Riesgos</a>
-  </div>
-</section>
+
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <div class="logo">
+      <h2>SST</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="riesgos.html">Riesgos</a></li>
+        <li><a href="riesgos.html#galeria">Galería</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-texto">
+      <h1>Seguridad y Salud en el Trabajo</h1>
+      <p>
+        La Seguridad y Salud en el Trabajo (SST) tiene como objetivo prevenir accidentes laborales y
+        enfermedades ocupacionales, promoviendo ambientes de trabajo seguros y saludables para todas
+        las personas.
+      </p>
+      <div class="hero-botones">
+        <a href="riesgos.html" class="btn">Conocer los Riesgos</a>
+        <a href="riesgos.html#galeria" class="btn">Ver Galería de Evidencias</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ¿QUÉ ES LA SST? ===================== -->
+  <section id="que-es">
+    <h2>¿Qué es la Seguridad y Salud en el Trabajo?</h2>
+    <p class="intro">
+      Es el conjunto de actividades, normas y procedimientos orientados a proteger la vida, la salud y la
+      integridad física, mental y social de los trabajadores dentro de su entorno laboral. Su propósito
+      es identificar, evaluar y controlar los factores de riesgo antes de que se conviertan en accidentes
+      o enfermedades.
+    </p>
+
+    <div class="contenedor">
+      <div class="caja">
+        <div class="icono">🎯</div>
+        <h3>Objetivo</h3>
+        <p>
+          Prevenir accidentes de trabajo y enfermedades laborales mediante la identificación temprana
+          de los peligros presentes en cada puesto de trabajo.
+        </p>
+      </div>
+
+      <div class="caja">
+        <div class="icono">⚖️</div>
+        <h3>Importancia</h3>
+        <p>
+          Proteger la vida de los trabajadores es una obligación legal y ética de toda organización,
+          además de mejorar la productividad y el ambiente laboral.
+        </p>
+      </div>
+
+      <div class="caja">
+        <div class="icono">🧩</div>
+        <h3>Alcance</h3>
+        <p>
+          Aplica a cualquier tipo de organización: empresas, instituciones educativas, laboratorios,
+          talleres y espacios públicos donde se desarrollen actividades laborales.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESUMEN DE RIESGOS ===================== -->
+  <section id="riesgos">
+    <h2>Los 7 Tipos de Riesgo Laboral</h2>
+    <p class="intro">
+      Cada riesgo tiene un origen distinto y puede afectar la salud de diferentes maneras. Haz clic en
+      cualquiera de ellos para ver ejemplos reales, sus posibles afectaciones y fotografías explicativas.
+    </p>
+
+    <div class="riesgos-resumen">
+      <a href="riesgos.html#biologico" class="riesgo-mini">
+        <div class="icono">🦠</div>
+        <h3>Biológico</h3>
+        <p>Virus, bacterias, hongos y parásitos.</p>
+      </a>
+      <a href="riesgos.html#quimico" class="riesgo-mini">
+        <div class="icono">🧪</div>
+        <h3>Químico</h3>
+        <p>Polvos, gases, vapores y líquidos.</p>
+      </a>
+      <a href="riesgos.html#psicosocial" class="riesgo-mini">
+        <div class="icono">🧠</div>
+        <h3>Psicosocial</h3>
+        <p>Estrés, presión laboral y acoso.</p>
+      </a>
+      <a href="riesgos.html#fisico" class="riesgo-mini">
+        <div class="icono">🔊</div>
+        <h3>Físico</h3>
+        <p>Ruido, temperatura, iluminación, radiación.</p>
+      </a>
+      <a href="riesgos.html#biomecanico" class="riesgo-mini">
+        <div class="icono">🏋️</div>
+        <h3>Biomecánico</h3>
+        <p>Posturas, cargas y movimientos repetitivos.</p>
+      </a>
+      <a href="riesgos.html#natural" class="riesgo-mini">
+        <div class="icono">🌪️</div>
+        <h3>Natural</h3>
+        <p>Sismos, inundaciones y tormentas.</p>
+      </a>
+      <a href="riesgos.html#condiciones-seguridad" class="riesgo-mini">
+        <div class="icono">⚠️</div>
+        <h3>Condiciones de Seguridad</h3>
+        <p>Riesgo eléctrico, mecánico, locativo y más.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== FRASE DESTACADA ===================== -->
+  <section class="frase">
+    <h2>"Conocer los riesgos es el primer paso para prevenir accidentes laborales."</h2>
+    <p>Prevenir cuesta menos que lamentar.</p>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <h3>Seguridad y Salud en el Trabajo</h3>
+    <p>Conocer los riesgos es el primer paso para prevenir accidentes laborales.</p>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="riesgos.html">Riesgos</a>
+      <a href="riesgos.html#galeria">Galería</a>
+    </div>
+    <p>© 2026 - Proyecto Educativo SST</p>
+  </footer>
+
 </body>
+
 </html>
