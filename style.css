@@ -1,0 +1,471 @@
+/*====================================
+    RESET GENERAL
+====================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg, #F8F1FC, #F3E5F5, #FFFFFF);
+    color: #333;
+    line-height: 1.7;
+}
+
+/*====================================
+            HEADER
+====================================*/
+
+header {
+    width: 100%;
+    background: #6A1B9A;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 6px 20px rgba(106, 27, 154, .35);
+}
+
+.logo h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/*====================================
+             MENU
+====================================*/
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav a:hover,
+nav .activo {
+    color: #E1BEE7;
+}
+
+/*====================================
+             HERO
+====================================*/
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px;
+    /* Premium gradient background */
+    background: linear-gradient(135deg, #6A1B9A, #8E24AA);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-texto {
+    max-width: 850px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+/*====================================
+            BOTONES
+====================================*/
+
+.btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    font-weight: bold;
+    transition: .3s;
+    backdrop-filter: blur(4px);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*====================================
+           SECCIONES
+====================================*/
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #6A1B9A;
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+
+section p {
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+}
+
+/*====================================
+          TARJETAS
+====================================*/
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.caja {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    border-top: 6px solid #9C27B0;
+    box-shadow: 0 12px 30px rgba(106, 27, 154, .15);
+    transition: .4s;
+}
+
+.caja:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(106, 27, 154, .25);
+}
+
+.caja h3 {
+    color: #6A1B9A;
+    margin-bottom: 15px;
+}
+
+/*====================================
+           GALERIA
+====================================*/
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 45px;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: .4s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+}
+
+/*====================================
+             TABLA
+====================================*/
+
+table {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+}
+
+th {
+    background: #6A1B9A;
+    color: white;
+    padding: 18px;
+}
+
+td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/*====================================
+        FRASE DESTACADA
+====================================*/
+
+.frase {
+    background: linear-gradient(135deg, #6A1B9A, #8E24AA);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.frase h2 {
+    color: white;
+    font-size: 36px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/*====================================
+      TITULO PAGINA RIESGOS
+====================================*/
+
+.titulo-pagina {
+    background: linear-gradient(135deg, #6A1B9A, #8E24AA);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.titulo-pagina h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.titulo-pagina p {
+    font-size: 18px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/*====================================
+       CONTENEDOR RIESGOS
+====================================*/
+
+.contenedor-riesgos {
+    width: 90%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 35px;
+}
+
+/*====================================
+        TARJETAS RIESGOS
+====================================*/
+
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(106, 27, 154, .18);
+    transition: .4s;
+    border-bottom: 7px solid #9C27B0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(106, 27, 154, .28);
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 25px;
+}
+
+.contenido h2 {
+    color: #6A1B9A;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contenido h3 {
+    margin-top: 20px;
+    color: #8E24AA;
+}
+
+.contenido p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.contenido ul {
+    margin-left: 22px;
+    margin-top: 10px;
+}
+
+.contenido li {
+    margin-bottom: 8px;
+}
+
+/*====================================
+      BOTON VOLVER
+====================================*/
+
+.volver {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+/*====================================
+            FOOTER
+====================================*/
+
+footer {
+    background: #4A148C;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/*====================================
+      EFECTO SCROLL SUAVE
+====================================*/
+
+.card,
+.caja,
+.imagenes img,
+.btn {
+    transition: all .35s ease;
+}
+
+/*====================================
+          RESPONSIVE TABLET
+====================================*/
+
+@media(max-width:900px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 90px 25px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 42px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+}
+
+/*====================================
+         RESPONSIVE MOVIL
+====================================*/
+
+@media(max-width:600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-riesgos {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+
+    .imagenes {
+        grid-template-columns: 1fr;
+    }
+
+    .imagenes img {
+        height: 220px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 34px;
+    }
+
+    .frase h2 {
+        font-size: 28px;
+    }
+
+}
